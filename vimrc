@@ -54,6 +54,8 @@ Plugin 'racer-rust/vim-racer'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-commentary'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 " }
@@ -70,6 +72,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_remove_include_errors = 1
 
 let g:syntastic_java_javac_classpath = "./build/libs/*.jar"
 
