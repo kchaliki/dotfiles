@@ -1,0 +1,15 @@
+" searching
+set hlsearch
+set incsearch
+set smartcase
+
+" plugins
+set surround
+set commentary
+
+" built-in navigating works better
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+" but preserve ideavim defaults
+nnoremap <C-S-o> <c-o>
+nnoremap <C-S-i> <c-i>
