@@ -130,44 +130,13 @@ set hlsearch                        " Highlight search results
 " Shortcut to turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 " }
-" Folding {
-" set foldmethod=indent               " Fold based on indent
 
-" set foldenable                      " Fold by default
-" set foldlevel=20                    " Open folds by default
-" set foldnestmax=10                  " Maximum nesting 10 levels
-
-" Space toggles fold
-" nnoremap <space> za
-" }
 " Movement {
 set virtualedit=onemore             " Allow for cursor beyond last character
 " }
-"
-" Yanking {
-" yank to clipboard
-" if has("clipboard")
-"     set clipboard=unnamed " copy to the system clipboard
-"
-"     if has("unnamedplus") " X11 support
-"         set clipboard+=unnamedplus
-"     endif
-" endif
-" }
-" tmux {
-"
-" Unify window change commands:
-" nnoremap <silent> j :TmuxNavigateDown<cr>
-" nnoremap <silent> k :TmuxNavigateUp<cr>
-" nnoremap <silent> h :TmuxNavigateLeft<cr>
-" nnoremap <silent> l :TmuxNavigateRight<cr>
-" nnoremap <silent> / :TmuxNavigatePrevious<cr>
 
 let g:tmux_navigator_save_on_switch = 2
 let g:tmux_navigator_disable_when_zoomed = 1
 
-" nnoremap j <c-w>j
-" nnoremap k <c-w>k
-" nnoremap h <c-w>h
-" nnoremap l <c-w>l
-" }
+" make Y effect to end of line instead of whole line
+nmap Y y$

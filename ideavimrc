@@ -13,3 +13,13 @@ nnoremap <c-i> :action Forward<cr>
 " but preserve ideavim defaults
 nnoremap <C-S-o> <c-o>
 nnoremap <C-S-i> <c-i>
+
+" make Y effect to end of line instead of whole line
+nmap Y y$
+
+" unimpaired mappings
+nnoremap [<Space> O<esc>j
+nnoremap ]<Space> o<esc>k
+nnoremap [m :action MethodUp<cr>
+nnoremap ]m :action MethodDown<cr>
+
