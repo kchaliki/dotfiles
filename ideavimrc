@@ -1,3 +1,6 @@
+" remap leader 
+let mapleader = " "
+
 " searching
 set hlsearch
 set incsearch
@@ -22,6 +25,8 @@ nnoremap [<Space> O<esc>jl
 nnoremap ]<Space> o<esc>kl
 nnoremap [m :action MethodUp<cr>
 nnoremap ]m :action MethodDown<cr>
+nnoremap [l :action GotoPreviousError<cr>
+nnoremap ]l :action GotoNextError<cr>
 
 " more vim like mappings of IDE features
 nnoremap gr :action RenameElement<cr>
