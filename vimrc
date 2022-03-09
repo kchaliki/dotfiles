@@ -56,6 +56,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/argtextobj.vim'
 
 call vundle#end()
 " }
