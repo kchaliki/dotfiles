@@ -4,11 +4,12 @@ let mapleader = " "
 " searching
 set hlsearch
 set incsearch
-set smartcase
+set ignorecase smartcase
 
 " plugins
 set surround
 set commentary
+set argtextobj
 
 " built-in navigating works better
 nnoremap <c-o> :action Back<cr>
@@ -33,4 +34,9 @@ nnoremap gr :action RenameElement<cr>
 nnoremap <C-S-t> :action SearchEverywhere<cr>
 nnoremap <C-t> :action FileStructurePopup<cr>
 
+" window navigation
+nnoremap <C-w>e :action ActivateProjectToolWindow<cr>
+nnoremap <C-w>t :action ActivateTerminalToolWindow<cr>
+nnoremap <C-w>r :action ActivateRunToolWindow<cr>
+nnoremap <C-w>d :action ActivateDebugToolWindow<cr>
 
